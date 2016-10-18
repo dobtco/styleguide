@@ -1,1 +1,0 @@
-DOBT's code styleguides
