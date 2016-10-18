@@ -1,0 +1,79 @@
+AllCops:
+  Exclude:
+    # Don't lint Fortitude views
+    - 'app/views/**/*'
+
+  DisplayCopNames: true
+
+Rails:
+  Enabled: true
+
+# Enable both "Nested" and "Compact" module children
+Style/ClassAndModuleChildren:
+  Enabled: false
+
+Style/DotPosition:
+  EnforcedStyle: trailing
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/ClosingParenthesisIndentation:
+  Enabled: false
+
+# This gets awkward in Rails: https://github.com/bbatsov/rubocop/issues/1520
+Style/Lambda:
+  Enabled: false
+
+# This appears to be buggy
+Style/Next:
+  Enabled: False
+
+Style/GuardClause:
+  Enabled: false
+
+# Be lenient with has_* and have_* methods
+Style/PredicateName:
+  NamePrefixBlacklist:
+  - is_
+
+# There appears to be a bug with this cop
+MultilineOperationIndentation:
+  Enabled: false
+
+# Foo.
+#   where(bar: 'baz')
+Style/MultilineMethodCallIndentation:
+  EnforcedStyle: indented_relative_to_receiver
+
+# We can use CodeClimate or something better to track issues like these:
+Metrics/AbcSize:
+  Enabled: false
+
+Metrics/MethodLength:
+  Enabled: false
+
+Metrics/CyclomaticComplexity:
+  Enabled: false
+
+Metrics/PerceivedComplexity:
+  Enabled: false
+
+Metrics/BlockLength:
+  Enabled: false
+
+# Lol @ this cop
+Metrics/ClassLength:
+  Enabled: false
+
+# Why this is a thing
+Rails/HasAndBelongsToMany:
+  Enabled: false
+
+# We need greater control over this
+Rails/OutputSafety:
+  Enabled: false
+
+# Don't want to enforce documentation atm
+Style/Documentation:
+  Enabled: false
