@@ -37,6 +37,9 @@ Style/PredicateName:
   NamePrefixBlacklist:
   - is_
 
+Style/MultilineBlockChain:
+  Enabled: false
+
 # There appears to be a bug with this cop
 MultilineOperationIndentation:
   Enabled: false
