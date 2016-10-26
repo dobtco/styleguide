@@ -1,0 +1,50 @@
+linters:
+  # This is just silly
+  DeclarationOrder:
+    enabled: false
+
+  # We can lint these manually, to avoid false positives:
+  IdSelector:
+    enabled: false
+
+  # We can lint this manually, to avoid false positives
+  ImportantRule:
+    enabled: false
+
+  # camelCase
+  NameFormat:
+    enabled: true
+    allow_leading_underscore: true
+    convention: camel_case
+
+  # We can lint this manually, to avoid false positives
+  NestingDepth:
+    enabled: false
+
+  # Silly
+  PropertySortOrder:
+    enabled: false
+
+  # I just don't care to configure this...
+  PropertyUnits:
+    enabled: false
+    global: [
+      'ch', 'em', 'ex', 'rem',                 # Font-relative lengths
+      'cm', 'in', 'mm', 'pc', 'pt', 'px', 'q', # Absolute lengths
+      'vh', 'vw', 'vmin', 'vmax',              # Viewport-percentage lengths
+      'deg', 'grad', 'rad', 'turn',            # Angle
+      'ms', 's',                               # Duration
+      'Hz', 'kHz',                             # Frequency
+      'dpi', 'dpcm', 'dppx',                   # Resolution
+      '%']                                     # Other
+    properties: {}
+
+  # This will give us false positives
+  QualifyingElement:
+    enabled: false
+
+  SelectorDepth:
+    enabled: false
+
+  SelectorFormat:
+    enabled: false

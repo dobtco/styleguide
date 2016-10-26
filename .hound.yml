@@ -3,3 +3,4 @@ ruby:
 
 scss:
   enabled: false
+  config_file: .scss-lint.yml
