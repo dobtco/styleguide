@@ -21,6 +21,10 @@ Style/FrozenStringLiteralComment:
 Style/ClosingParenthesisIndentation:
   Enabled: false
 
+# No ternary!
+Style/OneLineConditional:
+  Enabled: false
+
 # This gets awkward in Rails: https://github.com/bbatsov/rubocop/issues/1520
 Style/Lambda:
   Enabled: false
