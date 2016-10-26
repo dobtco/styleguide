@@ -84,3 +84,7 @@ Rails/OutputSafety:
 # Don't want to enforce documentation atm
 Style/Documentation:
   Enabled: false
+
+# This is goddamn unreadable
+Performance/Casecmp:
+  Enabled: false
