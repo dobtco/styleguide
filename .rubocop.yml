@@ -96,3 +96,7 @@ Lint/HandleExceptions:
 
 Style/DoubleNegation:
   Enabled: false
+
+# This is not always appropriate
+Style/WordArray:
+  Enabled: false
