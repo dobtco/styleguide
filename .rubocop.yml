@@ -86,3 +86,13 @@ Style/Documentation:
 # This is goddamn unreadable
 Performance/Casecmp:
   Enabled: false
+
+# This was removed: https://github.com/bbatsov/rubocop/pull/3470
+Performance/PushSplat:
+  Enabled: false
+
+Lint/HandleExceptions:
+  Enabled: false
+
+Style/DoubleNegation:
+  Enabled: false
