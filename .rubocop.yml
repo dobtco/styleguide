@@ -48,10 +48,8 @@ Style/MultilineBlockChain:
 MultilineOperationIndentation:
   Enabled: false
 
-# Foo.
-#   where(bar: 'baz')
 Style/MultilineMethodCallIndentation:
-  EnforcedStyle: indented_relative_to_receiver
+  Enabled: false
 
 # We can use CodeClimate or something better to track issues like these:
 Metrics/AbcSize:
